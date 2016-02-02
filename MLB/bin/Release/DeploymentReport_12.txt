@@ -1,0 +1,43 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       on [dbo].[Eligibility].[Date_Time_Created] (Default Constraint)
+       on [dbo].[Eligibility].[Date_Time_Modified] (Default Constraint)
+       on [dbo].[Player].[Date_Time_Created] (Default Constraint)
+       on [dbo].[Player].[Date_Time_Modified] (Default Constraint)
+       on [dbo].[Position].[Date_Time_Created] (Default Constraint)
+       on [dbo].[Position].[Date_Time_Modified] (Default Constraint)
+       on [dbo].[Team].[Date_Time_Created] (Default Constraint)
+       on [dbo].[Team].[Date_Time_Modified] (Default Constraint)
+     Create
+       [dbo].[Fantasy_League] (Table)
+       [dbo].[Fantasy_Roster] (Table)
+       [dbo].[Fantasy_Team] (Table)
+       Default Constraint on [dbo].[Fantasy_League].[LeagueType] (Default Constraint)
+       Default Constraint on [dbo].[Fantasy_League].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Fantasy_League].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Fantasy_Roster].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Fantasy_Roster].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Fantasy_Team].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Fantasy_Team].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Eligibility].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Eligibility].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Player].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Player].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Position].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Position].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Team].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Team].[Date_Time_Modified] (Default Constraint)
+       [dbo].[CK_Fantasy_League_LeagueType] (Check Constraint)
+       [dbo].[Status_CK] (Check Constraint)
+
+** Supporting actions

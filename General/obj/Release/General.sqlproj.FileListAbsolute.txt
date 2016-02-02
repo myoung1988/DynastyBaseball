@@ -1,0 +1,5 @@
+C:\Users\i335624\Desktop\Personal\MLB\General\bin\Release\General.dacpac
+C:\Users\i335624\Desktop\Personal\MLB\General\bin\Release\General.dll
+C:\Users\i335624\Desktop\Personal\MLB\General\bin\Release\General.pdb
+C:\Users\i335624\Desktop\Personal\MLB\General\obj\Release\General.dll
+C:\Users\i335624\Desktop\Personal\MLB\General\obj\Release\General.pdb

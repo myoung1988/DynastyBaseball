@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>User App</title>
+</head>
+<body>
+
+  <div>
+    <h2>Search by ID</h2>
+    <label>URI: </label><input type="text" id="URI" value="api/user/getuser" size="50" /><br />
+    <label>Value: </label><input type="text" id="UserValue" size="50" /><br />
+    <input type="button" value="Search" onclick="find();" /><br /><br />
+    <label>Response: </label><p id="response" /><br />
+    <label>Formated: </label><p id="user" />
+  </div>
+
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+  <script>
+      var uri = $('#URI').val();
+
+      function formatItem(item) {
+          return item.FirstName + ' ' + item.LastName;
+      }
+
+      function find() {
+          var id = $('#UserValue').val();
+
+          $('#response').text(jQuery.ajax({
+                url: uri + '/' + id,
+                async: false,
+                dataType: 'json'
+          }).responseText);
+
+          var data = jQuery.parseJSON(jQuery.ajax({
+              url: uri + '/' + id,
+              async: false,
+              dataType: 'json'
+          }).responseText);
+
+          $('#user').text(formatItem(data));
+      }
+  </script>
+</body>
+</html>

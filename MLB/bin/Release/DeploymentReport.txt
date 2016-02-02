@@ -1,0 +1,29 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Eligilblity] (Table)
+       [dbo].[Player] (Table)
+       [dbo].[Position] (Table)
+       [dbo].[Roster] (Table)
+       Default Constraint on [dbo].[Eligilblity].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Eligilblity].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Player].[Birthdate] (Default Constraint)
+       Default Constraint on [dbo].[Player].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Player].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Position].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Position].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Roster].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Roster].[Date_Time_Modified] (Default Constraint)
+       [dbo].[FK_Eligilblity_Posiition] (Foreign Key)
+       [dbo].[Status_CK] (Check Constraint)
+
+** Supporting actions

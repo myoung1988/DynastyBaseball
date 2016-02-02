@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="GeneralModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="AddressId" />
+          </Key>
+          <Property Name="AddressId" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="Line1" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Line2" Type="varchar" MaxLength="100" />
+          <Property Name="Line3" Type="varchar" MaxLength="100" />
+          <Property Name="ApartmentNumber" Type="varchar" MaxLength="50" />
+          <Property Name="City" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="State" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ZipCode" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Country" Type="varchar" MaxLength="100" />
+          <Property Name="Date_Time_Created" Type="datetime" Nullable="false" />
+          <Property Name="User_Id_Created" Type="varchar" MaxLength="50" />
+          <Property Name="Date_Time_Modified" Type="datetime" Nullable="false" />
+          <Property Name="User_Id_Modified" Type="varchar" MaxLength="50" />
+          <Property Name="Form_Id" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Cash_Receipt_Transaction">
+          <Key>
+            <PropertyRef Name="CashID" />
+          </Key>
+          <Property Name="CashID" Type="int" Nullable="false" />
+          <Property Name="InvoiceID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="Receipt_Date" Type="date" Nullable="false" />
+          <Property Name="Amount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Deposit_Number" Type="varchar" MaxLength="100" />
+          <Property Name="Record_Status" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="Date_Time_Created" Type="datetime" Nullable="false" />
+          <Property Name="User_Id_Created" Type="varchar" MaxLength="50" />
+          <Property Name="Date_Time_Modified" Type="datetime" Nullable="false" />
+          <Property Name="User_Id_Modified" Type="varchar" MaxLength="50" />
+          <Property Name="Form_Id" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Invoice">
+          <Key>
+            <PropertyRef Name="InvoiceID" />
+          </Key>
+          <Property Name="InvoiceID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="Receipt_Date" Type="date" Nullable="false" />
+          <Property Name="Amount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Record_Status" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="Date_Time_Created" Type="datetime" Nullable="false" />
+          <Property Name="User_Id_Created" Type="varchar" MaxLength="50" />
+          <Property Name="Date_Time_Modified" Type="datetime" Nullable="false" />
+          <Property Name="User_Id_Modified" Type="varchar" MaxLength="50" />
+          <Property Name="Form_Id" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="UserName" Type="varchar(max)" Nullable="false" />
+          <Property Name="FirstName" Type="varchar(max)" Nullable="false" />
+          <Property Name="LastName" Type="varchar(max)" Nullable="false" />
+          <Property Name="EmailAddress" Type="varchar(max)" Nullable="false" />
+          <Property Name="ReceiveNewsletter" Type="bit" />
+          <Property Name="Date_Time_Created" Type="datetime" Nullable="false" />
+          <Property Name="User_Id_Created" Type="varchar" MaxLength="50" />
+          <Property Name="Date_Time_Modified" Type="datetime" Nullable="false" />
+          <Property Name="User_Id_Modified" Type="varchar" MaxLength="50" />
+          <Property Name="Form_Id" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="GeneralModelStoreContainer">
+          <EntitySet Name="Address" EntityType="Self.Address" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Cash_Receipt_Transaction" EntityType="Self.Cash_Receipt_Transaction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Invoice" EntityType="Self.Invoice" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GeneralModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="AddressId" />
+          </Key>
+          <Property Name="AddressId" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Line1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Line2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Line3" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ApartmentNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="State" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ZipCode" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Country" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Date_Time_Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="User_Id_Created" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Date_Time_Modified" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="User_Id_Modified" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Form_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Cash_Receipt_Transaction">
+          <Key>
+            <PropertyRef Name="CashID" />
+          </Key>
+          <Property Name="CashID" Type="Int32" Nullable="false" />
+          <Property Name="InvoiceID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="Receipt_Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Deposit_Number" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Record_Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Date_Time_Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="User_Id_Created" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Date_Time_Modified" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="User_Id_Modified" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Form_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Invoice">
+          <Key>
+            <PropertyRef Name="InvoiceID" />
+          </Key>
+          <Property Name="InvoiceID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="Receipt_Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Record_Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Date_Time_Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="User_Id_Created" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Date_Time_Modified" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="User_Id_Modified" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Form_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EmailAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ReceiveNewsletter" Type="Boolean" />
+          <Property Name="Date_Time_Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="User_Id_Created" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Date_Time_Modified" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="User_Id_Modified" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Form_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="GeneralEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Addresses" EntityType="Self.Address" />
+          <EntitySet Name="Cash_Receipt_Transaction" EntityType="Self.Cash_Receipt_Transaction" />
+          <EntitySet Name="Invoices" EntityType="Self.Invoice" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GeneralModelStoreContainer" CdmEntityContainer="GeneralEntities">
+          <EntitySetMapping Name="Addresses">
+            <EntityTypeMapping TypeName="GeneralModel.Address">
+              <MappingFragment StoreEntitySet="Address">
+                <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Line1" ColumnName="Line1" />
+                <ScalarProperty Name="Line2" ColumnName="Line2" />
+                <ScalarProperty Name="Line3" ColumnName="Line3" />
+                <ScalarProperty Name="ApartmentNumber" ColumnName="ApartmentNumber" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Date_Time_Created" ColumnName="Date_Time_Created" />
+                <ScalarProperty Name="User_Id_Created" ColumnName="User_Id_Created" />
+                <ScalarProperty Name="Date_Time_Modified" ColumnName="Date_Time_Modified" />
+                <ScalarProperty Name="User_Id_Modified" ColumnName="User_Id_Modified" />
+                <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cash_Receipt_Transaction">
+            <EntityTypeMapping TypeName="GeneralModel.Cash_Receipt_Transaction">
+              <MappingFragment StoreEntitySet="Cash_Receipt_Transaction">
+                <ScalarProperty Name="CashID" ColumnName="CashID" />
+                <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Receipt_Date" ColumnName="Receipt_Date" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Deposit_Number" ColumnName="Deposit_Number" />
+                <ScalarProperty Name="Record_Status" ColumnName="Record_Status" />
+                <ScalarProperty Name="Date_Time_Created" ColumnName="Date_Time_Created" />
+                <ScalarProperty Name="User_Id_Created" ColumnName="User_Id_Created" />
+                <ScalarProperty Name="Date_Time_Modified" ColumnName="Date_Time_Modified" />
+                <ScalarProperty Name="User_Id_Modified" ColumnName="User_Id_Modified" />
+                <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Invoices">
+            <EntityTypeMapping TypeName="GeneralModel.Invoice">
+              <MappingFragment StoreEntitySet="Invoice">
+                <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Receipt_Date" ColumnName="Receipt_Date" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Record_Status" ColumnName="Record_Status" />
+                <ScalarProperty Name="Date_Time_Created" ColumnName="Date_Time_Created" />
+                <ScalarProperty Name="User_Id_Created" ColumnName="User_Id_Created" />
+                <ScalarProperty Name="Date_Time_Modified" ColumnName="Date_Time_Modified" />
+                <ScalarProperty Name="User_Id_Modified" ColumnName="User_Id_Modified" />
+                <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="GeneralModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="ReceiveNewsletter" ColumnName="ReceiveNewsletter" />
+                <ScalarProperty Name="Date_Time_Created" ColumnName="Date_Time_Created" />
+                <ScalarProperty Name="User_Id_Created" ColumnName="User_Id_Created" />
+                <ScalarProperty Name="Date_Time_Modified" ColumnName="Date_Time_Modified" />
+                <ScalarProperty Name="User_Id_Modified" ColumnName="User_Id_Modified" />
+                <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

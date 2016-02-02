@@ -1,0 +1,25 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[Address] (Table)
+       [dbo].[User] (Table)
+     Create
+       [dbo].[Cash_Receipt_Transaction] (Table)
+       [dbo].[Invoice] (Table)
+       Default Constraint on [dbo].[Cash_Receipt_Transaction].[Record_Status] (Default Constraint)
+       Default Constraint on [dbo].[Cash_Receipt_Transaction].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Cash_Receipt_Transaction].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Invoice].[Record_Status] (Default Constraint)
+       Default Constraint on [dbo].[Invoice].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Invoice].[Date_Time_Modified] (Default Constraint)
+
+** Supporting actions

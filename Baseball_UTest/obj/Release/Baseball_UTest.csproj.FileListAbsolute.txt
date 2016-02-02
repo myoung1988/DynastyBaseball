@@ -1,0 +1,5 @@
+C:\Users\i335624\Desktop\Personal\MLB\Baseball_UTest\obj\Release\Baseball_UTest.csprojResolveAssemblyReference.cache
+C:\Users\i335624\Desktop\Personal\MLB\Baseball_UTest\bin\Release\Baseball_UTest.dll
+C:\Users\i335624\Desktop\Personal\MLB\Baseball_UTest\bin\Release\Baseball_UTest.pdb
+C:\Users\i335624\Desktop\Personal\MLB\Baseball_UTest\obj\Release\Baseball_UTest.dll
+C:\Users\i335624\Desktop\Personal\MLB\Baseball_UTest\obj\Release\Baseball_UTest.pdb

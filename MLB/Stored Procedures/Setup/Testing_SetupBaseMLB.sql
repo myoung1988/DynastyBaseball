@@ -1,0 +1,56 @@
+﻿CREATE PROCEDURE [dbo].[Testing_SetupBaseMLB]
+
+AS
+BEGIN
+-- Teams
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (1, 'ARI', 'Diamondbacks')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (2, 'ATL', 'Braves')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (3, 'BAL', 'Orioles')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (4, 'BOS', 'Red Sox')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (5, 'CHC', 'Cubs')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (6, 'CHW', 'White Sox')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (7, 'CIN', 'Reds')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (8, 'CLE', 'Indians')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (9, 'COL', 'Rockies')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (10, 'DET', 'Tigers')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (11, 'HOU', 'Astros')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (12, 'KC', 'Royals')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (13, 'LAA', 'Angels')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (14, 'LAD', 'Dodgers')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (15, 'MIA', 'Marlins')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (16, 'MIL', 'Brewers')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (17, 'MIN', 'Twins')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (18, 'NYM', 'Mets')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (19, 'NYY', 'Yankees')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (20, 'OAK', 'As')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (21, 'PHI', 'Phillies')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (22, 'PIT', 'Pirates')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (23, 'SD', 'Padres')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (24, 'SEA', 'Mariners')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (25, 'SF', 'Giants')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (26, 'STL', 'Cardinals')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (27, 'TB', 'Rays')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (28, 'TEX', 'Rangers')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (29, 'TOR', 'Blue Jays')
+INSERT INTO MLB.Team (TeamID, Abbreviation, Name) VALUES (30, 'WAS', 'Nationals')
+
+-- Positions
+INSERT INTO MLB.Position (PositionID, Name) VALUES (1, 'C')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (2, '1B')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (3, '2B')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (4, '3B')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (5, 'SS')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (6, 'OF')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (7, 'U')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (8, 'SP')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (9, 'RP')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (10, 'P')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (11, 'MI')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (12, 'CI')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (13, 'LF')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (14, 'CF')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (15, 'RF')
+INSERT INTO MLB.Position (PositionID, Name) VALUES (16, 'DH')
+
+
+END

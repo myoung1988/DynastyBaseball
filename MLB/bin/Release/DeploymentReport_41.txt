@@ -1,0 +1,132 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [MLB].[Eligibility]
+       [MLB].[Stats_Daily]
+       [MLB].[Stats_Projection]
+       [MLB].[Stats_Season]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column SeasonID in table [MLB].[Eligibility] is currently  DATE NOT NULL but is being changed to  INT NOT
+         NULL. There is no implicit or explicit conversion.
+       The column [MLB].[Stats_Daily].[SeasonID] on table [MLB].[Stats_Daily] must be added, but the column has no default
+         value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue
+         you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of
+         smart-defaults as a deployment option.
+       The column [MLB].[Stats_Projection].[Season] is being dropped, data loss could occur.
+       The column [MLB].[Stats_Projection].[SeasonID] on table [MLB].[Stats_Projection] must be added, but the column has no
+         default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this
+         issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of
+         smart-defaults as a deployment option.
+       The type for column SeasonID in table [MLB].[Stats_Season] is currently  DATE NOT NULL but is being changed to  INT NOT
+         NULL. There is no implicit or explicit conversion.
+
+** User actions
+     Rename
+       [MLB].[Eligibility].[SeasonID] (Column)
+       [MLB].[Stats_Season].[SeasonID] (Column)
+     Drop
+       on [MLB].[Eligibility].[SeasonID] (Default Constraint)
+       on [MLB].[Eligibility].[PrimaryPos] (Default Constraint)
+       on [MLB].[Eligibility].[DaysPlayed] (Default Constraint)
+       on [MLB].[Eligibility].[Date_Time_Created] (Default Constraint)
+       on [MLB].[Eligibility].[Date_Time_Modified] (Default Constraint)
+       on [MLB].[Stats_Daily].[Day] (Default Constraint)
+       on [MLB].[Stats_Daily].[Date_Time_Created] (Default Constraint)
+       on [MLB].[Stats_Daily].[Date_Time_Modified] (Default Constraint)
+       on [MLB].[Stats_Projection].[Season] (Default Constraint)
+       on [MLB].[Stats_Projection].[Date_Time_Created] (Default Constraint)
+       on [MLB].[Stats_Projection].[Date_Time_Modified] (Default Constraint)
+       on [MLB].[Stats_Season].[SeasonID] (Default Constraint)
+       on [MLB].[Stats_Season].[Date_Time_Created] (Default Constraint)
+       on [MLB].[Stats_Season].[Date_Time_Modified] (Default Constraint)
+       on [Fantasy].[League].[Date_Time_Created] (Default Constraint)
+       on [Fantasy].[League].[Date_Time_Modified] (Default Constraint)
+       on [Fantasy].[Roster].[Date_Time_Created] (Default Constraint)
+       on [Fantasy].[Roster].[Date_Time_Modified] (Default Constraint)
+       on [Fantasy].[Team].[Date_Time_Created] (Default Constraint)
+       on [Fantasy].[Team].[Date_Time_Modified] (Default Constraint)
+       on [Fantasy].[Transaction].[TransactionDate] (Default Constraint)
+       on [Fantasy].[Transaction].[Date_Time_Created] (Default Constraint)
+       on [Fantasy].[Transaction].[Date_Time_Modified] (Default Constraint)
+       on [LeagueConfig].[Config].[Date_Time_Created] (Default Constraint)
+       on [LeagueConfig].[Config].[Date_Time_Modified] (Default Constraint)
+       on [LeagueConfig].[Scoring_System_Category].[Date_Time_Created] (Default Constraint)
+       on [LeagueConfig].[Scoring_System_Category].[Date_Time_Modified] (Default Constraint)
+       on [LeagueConfig].[Scoring_System_Category_PointBonuses].[Date_Time_Created] (Default Constraint)
+       on [LeagueConfig].[Scoring_System_Category_PointBonuses].[Date_Time_Modified] (Default Constraint)
+       on [LeagueConfig].[Scoring_System_Category_PointRange].[Date_Time_Created] (Default Constraint)
+       on [LeagueConfig].[Scoring_System_Category_PointRange].[Date_Time_Modified] (Default Constraint)
+       on [LeagueConfig].[Team_Roster_Limits].[Date_Time_Created] (Default Constraint)
+       on [LeagueConfig].[Team_Roster_Limits].[Date_Time_Modified] (Default Constraint)
+       on [LeagueConfig].[Team_Roster_Positions].[Date_Time_Created] (Default Constraint)
+       on [LeagueConfig].[Team_Roster_Positions].[Date_Time_Modified] (Default Constraint)
+       on [LeagueConfig].[Transaction_Policies].[Date_Time_Created] (Default Constraint)
+       on [LeagueConfig].[Transaction_Policies].[Date_Time_Modified] (Default Constraint)
+       on [MLB].[Player].[Date_Time_Created] (Default Constraint)
+       on [MLB].[Player].[Date_Time_Modified] (Default Constraint)
+       on [MLB].[Position].[Date_Time_Created] (Default Constraint)
+       on [MLB].[Position].[Date_Time_Modified] (Default Constraint)
+       on [MLB].[Team].[Date_Time_Created] (Default Constraint)
+       on [MLB].[Team].[Date_Time_Modified] (Default Constraint)
+       on [SystemConfig].[RosterPositions].[Date_Time_Created] (Default Constraint)
+       on [SystemConfig].[RosterPositions].[Date_Time_Modified] (Default Constraint)
+       on [SystemConfig].[ScoringCategories].[Date_Time_Created] (Default Constraint)
+       on [SystemConfig].[ScoringCategories].[Date_Time_Modified] (Default Constraint)
+     Table rebuild
+       [MLB].[Eligibility] (Table)
+       [MLB].[Stats_Daily] (Table)
+       [MLB].[Stats_Projection] (Table)
+       [MLB].[Stats_Season] (Table)
+     Create
+       [dbo].[Schedule] (Table)
+       Default Constraint on [dbo].[Schedule].[Playoffs] (Default Constraint)
+       Default Constraint on [Fantasy].[League].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [Fantasy].[League].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [Fantasy].[Roster].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [Fantasy].[Roster].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [Fantasy].[Team].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [Fantasy].[Team].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [Fantasy].[Transaction].[TransactionDate] (Default Constraint)
+       Default Constraint on [Fantasy].[Transaction].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [Fantasy].[Transaction].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Config].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Config].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Scoring_System_Category].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Scoring_System_Category].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Scoring_System_Category_PointBonuses].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Scoring_System_Category_PointBonuses].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Scoring_System_Category_PointRange].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Scoring_System_Category_PointRange].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Team_Roster_Limits].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Team_Roster_Limits].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Team_Roster_Positions].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Team_Roster_Positions].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Transaction_Policies].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Transaction_Policies].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [MLB].[Player].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [MLB].[Player].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [MLB].[Position].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [MLB].[Position].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [MLB].[Team].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [MLB].[Team].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [SystemConfig].[RosterPositions].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [SystemConfig].[RosterPositions].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [SystemConfig].[ScoringCategories].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [SystemConfig].[ScoringCategories].[Date_Time_Modified] (Default Constraint)
+       [Fantasy].[fnGetPeriod] (Function)
+
+** Supporting actions
+     Drop
+       [MLB].[FK_Eligilblity_Posiition] (Foreign Key)
+     Create
+       [MLB].[FK_Eligilblity_Posiition] (Foreign Key)
+
+The type for column SeasonID in table [MLB].[Eligibility] is currently  DATE NOT NULL but is being changed to  INT NOT NULL. There is no implicit or explicit conversion.
+The column [MLB].[Stats_Daily].[SeasonID] on table [MLB].[Stats_Daily] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column [MLB].[Stats_Projection].[Season] is being dropped, data loss could occur.
+The column [MLB].[Stats_Projection].[SeasonID] on table [MLB].[Stats_Projection] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The type for column SeasonID in table [MLB].[Stats_Season] is currently  DATE NOT NULL but is being changed to  INT NOT NULL. There is no implicit or explicit conversion.
+

@@ -1,0 +1,39 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       on [dbo].[Stats_Daily].[Date_Time_Created] (Default Constraint)
+       on [dbo].[Stats_Daily].[Date_Time_Modified] (Default Constraint)
+     Create
+       Default Constraint on [dbo].[Eligibility].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Eligibility].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Fantasy_League].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Fantasy_League].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Fantasy_Roster].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Fantasy_Roster].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Fantasy_Team].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Fantasy_Team].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Player].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Player].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Position].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Position].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Stats_Daily].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Stats_Daily].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Stats_Projection].[Day] (Default Constraint)
+       Default Constraint on [dbo].[Stats_Projection].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Stats_Projection].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Stats_Season].[Day] (Default Constraint)
+       Default Constraint on [dbo].[Stats_Season].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Stats_Season].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Team].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Team].[Date_Time_Modified] (Default Constraint)
+
+** Supporting actions

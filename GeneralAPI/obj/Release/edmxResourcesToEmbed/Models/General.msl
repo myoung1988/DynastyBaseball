@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GeneralModelStoreContainer" CdmEntityContainer="GeneralEntities">
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="GeneralModel.Address">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Line1" ColumnName="Line1" />
+          <ScalarProperty Name="Line2" ColumnName="Line2" />
+          <ScalarProperty Name="Line3" ColumnName="Line3" />
+          <ScalarProperty Name="ApartmentNumber" ColumnName="ApartmentNumber" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Date_Time_Created" ColumnName="Date_Time_Created" />
+          <ScalarProperty Name="User_Id_Created" ColumnName="User_Id_Created" />
+          <ScalarProperty Name="Date_Time_Modified" ColumnName="Date_Time_Modified" />
+          <ScalarProperty Name="User_Id_Modified" ColumnName="User_Id_Modified" />
+          <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cash_Receipt_Transaction">
+      <EntityTypeMapping TypeName="GeneralModel.Cash_Receipt_Transaction">
+        <MappingFragment StoreEntitySet="Cash_Receipt_Transaction">
+          <ScalarProperty Name="CashID" ColumnName="CashID" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Receipt_Date" ColumnName="Receipt_Date" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Deposit_Number" ColumnName="Deposit_Number" />
+          <ScalarProperty Name="Record_Status" ColumnName="Record_Status" />
+          <ScalarProperty Name="Date_Time_Created" ColumnName="Date_Time_Created" />
+          <ScalarProperty Name="User_Id_Created" ColumnName="User_Id_Created" />
+          <ScalarProperty Name="Date_Time_Modified" ColumnName="Date_Time_Modified" />
+          <ScalarProperty Name="User_Id_Modified" ColumnName="User_Id_Modified" />
+          <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="GeneralModel.Invoice">
+        <MappingFragment StoreEntitySet="Invoice">
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Receipt_Date" ColumnName="Receipt_Date" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Record_Status" ColumnName="Record_Status" />
+          <ScalarProperty Name="Date_Time_Created" ColumnName="Date_Time_Created" />
+          <ScalarProperty Name="User_Id_Created" ColumnName="User_Id_Created" />
+          <ScalarProperty Name="Date_Time_Modified" ColumnName="Date_Time_Modified" />
+          <ScalarProperty Name="User_Id_Modified" ColumnName="User_Id_Modified" />
+          <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="GeneralModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="ReceiveNewsletter" ColumnName="ReceiveNewsletter" />
+          <ScalarProperty Name="Date_Time_Created" ColumnName="Date_Time_Created" />
+          <ScalarProperty Name="User_Id_Created" ColumnName="User_Id_Created" />
+          <ScalarProperty Name="Date_Time_Modified" ColumnName="Date_Time_Modified" />
+          <ScalarProperty Name="User_Id_Modified" ColumnName="User_Id_Modified" />
+          <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

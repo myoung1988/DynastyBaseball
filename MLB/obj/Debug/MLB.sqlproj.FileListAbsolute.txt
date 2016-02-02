@@ -1,0 +1,5 @@
+C:\Users\i335624\Desktop\Personal\MLB\MLB\bin\Debug\MLB.dacpac
+C:\Users\i335624\Desktop\Personal\MLB\MLB\bin\Debug\MLB.dll
+C:\Users\i335624\Desktop\Personal\MLB\MLB\bin\Debug\MLB.pdb
+C:\Users\i335624\Desktop\Personal\MLB\MLB\obj\Debug\MLB.dll
+C:\Users\i335624\Desktop\Personal\MLB\MLB\obj\Debug\MLB.pdb

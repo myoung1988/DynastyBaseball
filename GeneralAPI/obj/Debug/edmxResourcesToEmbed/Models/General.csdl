@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GeneralModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="AddressId" />
+    </Key>
+    <Property Name="AddressId" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Line1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Line2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Line3" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ApartmentNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="State" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ZipCode" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Country" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Date_Time_Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="User_Id_Created" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Date_Time_Modified" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="User_Id_Modified" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Form_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Cash_Receipt_Transaction">
+    <Key>
+      <PropertyRef Name="CashID" />
+    </Key>
+    <Property Name="CashID" Type="Int32" Nullable="false" />
+    <Property Name="InvoiceID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="Receipt_Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Deposit_Number" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Record_Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Date_Time_Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="User_Id_Created" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Date_Time_Modified" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="User_Id_Modified" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Form_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+    </Key>
+    <Property Name="InvoiceID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="Receipt_Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Record_Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Date_Time_Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="User_Id_Created" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Date_Time_Modified" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="User_Id_Modified" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Form_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ReceiveNewsletter" Type="Boolean" />
+    <Property Name="Date_Time_Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="User_Id_Created" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Date_Time_Modified" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="User_Id_Modified" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Form_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="GeneralEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Addresses" EntityType="Self.Address" />
+    <EntitySet Name="Cash_Receipt_Transaction" EntityType="Self.Cash_Receipt_Transaction" />
+    <EntitySet Name="Invoices" EntityType="Self.Invoice" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+  </EntityContainer>
+</Schema>

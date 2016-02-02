@@ -1,0 +1,9 @@
+C:\Users\i335624\Desktop\Personal\MLB\MLB\bin\Release\MLB.dacpac
+C:\Users\i335624\Desktop\Personal\MLB\MLB\bin\Release\MLB.dll
+C:\Users\i335624\Desktop\Personal\MLB\MLB\bin\Release\MLB.pdb
+C:\Users\i335624\Desktop\Personal\MLB\MLB\obj\Release\MLB.dll
+C:\Users\i335624\Desktop\Personal\MLB\MLB\obj\Release\MLB.pdb
+C:\Users\i335624\Desktop\Personal\MLB\MLB\obj\Release\Model.xml
+C:\Users\i335624\Desktop\Personal\MLB\MLB\obj\Release\refactor.xml
+C:\Users\i335624\Desktop\Personal\MLB\MLB\obj\Release\postdeploy.sql
+C:\Users\i335624\Desktop\Personal\MLB\MLB\obj\Release\predeploy.sql

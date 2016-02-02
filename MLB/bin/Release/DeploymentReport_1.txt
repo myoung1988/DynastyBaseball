@@ -1,0 +1,33 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Player]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       on [dbo].[Player].[Birthdate] (Default Constraint)
+       on [dbo].[Player].[Date_Time_Created] (Default Constraint)
+       on [dbo].[Player].[Date_Time_Modified] (Default Constraint)
+       on [dbo].[Eligilblity].[Date_Time_Created] (Default Constraint)
+       on [dbo].[Eligilblity].[Date_Time_Modified] (Default Constraint)
+       on [dbo].[Position].[Date_Time_Created] (Default Constraint)
+       on [dbo].[Position].[Date_Time_Modified] (Default Constraint)
+       on [dbo].[Roster].[Date_Time_Created] (Default Constraint)
+       on [dbo].[Roster].[Date_Time_Modified] (Default Constraint)
+     Table rebuild
+       [dbo].[Player] (Table)
+     Create
+       [dbo].[Team] (Table)
+       Default Constraint on [dbo].[Eligilblity].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Eligilblity].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Position].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Position].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [dbo].[Roster].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Roster].[Date_Time_Modified] (Default Constraint)
+
+** Supporting actions

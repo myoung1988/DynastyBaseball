@@ -1,0 +1,5 @@
+C:\Users\i335624\Desktop\Personal\MLB\General\bin\Debug\General.dacpac
+C:\Users\i335624\Desktop\Personal\MLB\General\bin\Debug\General.dll
+C:\Users\i335624\Desktop\Personal\MLB\General\bin\Debug\General.pdb
+C:\Users\i335624\Desktop\Personal\MLB\General\obj\Debug\General.dll
+C:\Users\i335624\Desktop\Personal\MLB\General\obj\Debug\General.pdb

@@ -1,0 +1,107 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       Primary Key on [MLB].[Stats_Season]
+     Possible data issues
+       The column [dbo].[Transaction].[Form_Id_Modified_Modified] is being dropped, data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[Transaction].[Form_Id_Modified_Modified] (Column)
+       [MLB].[Stats_Projection].[Season] (Column)
+     Drop
+       on [dbo].[Transaction].[TransactionDate] (Default Constraint)
+       on [dbo].[Transaction].[Date_Time_Created] (Default Constraint)
+       on [dbo].[Transaction].[Date_Time_Modified] (Default Constraint)
+       on [Fantasy].[League].[Date_Time_Created] (Default Constraint)
+       on [Fantasy].[League].[Date_Time_Modified] (Default Constraint)
+       on [Fantasy].[Roster].[Date_Time_Created] (Default Constraint)
+       on [Fantasy].[Roster].[Date_Time_Modified] (Default Constraint)
+       on [Fantasy].[Team].[Date_Time_Created] (Default Constraint)
+       on [Fantasy].[Team].[Date_Time_Modified] (Default Constraint)
+       on [LeagueConfig].[Config].[Date_Time_Created] (Default Constraint)
+       on [LeagueConfig].[Config].[Date_Time_Modified] (Default Constraint)
+       on [LeagueConfig].[Scoring_System_Category].[Date_Time_Created] (Default Constraint)
+       on [LeagueConfig].[Scoring_System_Category].[Date_Time_Modified] (Default Constraint)
+       on [LeagueConfig].[Scoring_System_Category_PointBonuses].[Date_Time_Created] (Default Constraint)
+       on [LeagueConfig].[Scoring_System_Category_PointBonuses].[Date_Time_Modified] (Default Constraint)
+       on [LeagueConfig].[Scoring_System_Category_PointRange].[Date_Time_Created] (Default Constraint)
+       on [LeagueConfig].[Scoring_System_Category_PointRange].[Date_Time_Modified] (Default Constraint)
+       on [LeagueConfig].[Team_Roster_Limits].[Date_Time_Created] (Default Constraint)
+       on [LeagueConfig].[Team_Roster_Limits].[Date_Time_Modified] (Default Constraint)
+       on [LeagueConfig].[Team_Roster_Positions].[Date_Time_Created] (Default Constraint)
+       on [LeagueConfig].[Team_Roster_Positions].[Date_Time_Modified] (Default Constraint)
+       on [LeagueConfig].[Transaction_Policies].[Date_Time_Created] (Default Constraint)
+       on [LeagueConfig].[Transaction_Policies].[Date_Time_Modified] (Default Constraint)
+       on [MLB].[Eligibility].[Date_Time_Created] (Default Constraint)
+       on [MLB].[Eligibility].[Date_Time_Modified] (Default Constraint)
+       on [MLB].[Player].[Date_Time_Created] (Default Constraint)
+       on [MLB].[Player].[Date_Time_Modified] (Default Constraint)
+       on [MLB].[Position].[Date_Time_Created] (Default Constraint)
+       on [MLB].[Position].[Date_Time_Modified] (Default Constraint)
+       on [MLB].[Stats_Daily].[Date_Time_Created] (Default Constraint)
+       on [MLB].[Stats_Daily].[Date_Time_Modified] (Default Constraint)
+       on [MLB].[Stats_Projection].[Date_Time_Created] (Default Constraint)
+       on [MLB].[Stats_Projection].[Date_Time_Modified] (Default Constraint)
+       on [MLB].[Stats_Season].[Date_Time_Created] (Default Constraint)
+       on [MLB].[Stats_Season].[Date_Time_Modified] (Default Constraint)
+       on [MLB].[Team].[Date_Time_Created] (Default Constraint)
+       on [MLB].[Team].[Date_Time_Modified] (Default Constraint)
+       on [SystemConfig].[RosterPositions].[Date_Time_Created] (Default Constraint)
+       on [SystemConfig].[RosterPositions].[Date_Time_Modified] (Default Constraint)
+       on [SystemConfig].[ScoringCategories].[Date_Time_Created] (Default Constraint)
+       on [SystemConfig].[ScoringCategories].[Date_Time_Modified] (Default Constraint)
+     Alter
+       [dbo].[Transaction] (Table)
+     Create
+       Primary Key on [MLB].[Stats_Season] (Primary Key)
+       Default Constraint on [dbo].[Transaction].[TransactionDate] (Default Constraint)
+       Default Constraint on [dbo].[Transaction].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [dbo].[Transaction].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [Fantasy].[League].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [Fantasy].[League].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [Fantasy].[Roster].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [Fantasy].[Roster].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [Fantasy].[Team].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [Fantasy].[Team].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Config].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Config].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Scoring_System_Category].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Scoring_System_Category].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Scoring_System_Category_PointBonuses].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Scoring_System_Category_PointBonuses].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Scoring_System_Category_PointRange].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Scoring_System_Category_PointRange].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Team_Roster_Limits].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Team_Roster_Limits].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Team_Roster_Positions].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Team_Roster_Positions].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Transaction_Policies].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [LeagueConfig].[Transaction_Policies].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [MLB].[Eligibility].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [MLB].[Eligibility].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [MLB].[Player].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [MLB].[Player].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [MLB].[Position].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [MLB].[Position].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [MLB].[Stats_Daily].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [MLB].[Stats_Daily].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [MLB].[Stats_Projection].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [MLB].[Stats_Projection].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [MLB].[Stats_Season].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [MLB].[Stats_Season].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [MLB].[Team].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [MLB].[Team].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [SystemConfig].[RosterPositions].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [SystemConfig].[RosterPositions].[Date_Time_Modified] (Default Constraint)
+       Default Constraint on [SystemConfig].[ScoringCategories].[Date_Time_Created] (Default Constraint)
+       Default Constraint on [SystemConfig].[ScoringCategories].[Date_Time_Modified] (Default Constraint)
+       [dbo].[spLoadStatsForPlayer] (Procedure)
+
+** Supporting actions
+
+The column [dbo].[Transaction].[Form_Id_Modified_Modified] is being dropped, data loss could occur.
+
