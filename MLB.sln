@@ -1,25 +1,45 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Baseball", "MLB\Baseball.sqlproj", "{C0E01E3E-A358-42D5-B15D-93E4261DDA77}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database.Baseball", "MLB\Database.Baseball.sqlproj", "{C0E01E3E-A358-42D5-B15D-93E4261DDA77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewer", "Viewer\Viewer.csproj", "{78002B0E-E5EE-4B00-8097-97FB4B46D318}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynasty.Viewer", "Viewer\Dynasty.Viewer.csproj", "{78002B0E-E5EE-4B00-8097-97FB4B46D318}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewer.Tests", "Viewer.Tests\Viewer.Tests.csproj", "{BA0BBE00-AC69-46F3-84E7-AA4EED7316E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynasty.Viewer.Tests", "Viewer.Tests\Dynasty.Viewer.Tests.csproj", "{BA0BBE00-AC69-46F3-84E7-AA4EED7316E0}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "General", "General\General.sqlproj", "{04F0DBBA-04DA-4AD6-BEED-C4A966927D8E}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database.General", "General\Database.General.sqlproj", "{04F0DBBA-04DA-4AD6-BEED-C4A966927D8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralAPI", "GeneralAPI\GeneralAPI.csproj", "{F2818256-D298-465C-93F9-067F6C74123A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynasty.General.RestApi", "GeneralAPI\Dynasty.General.RestApi.csproj", "{F2818256-D298-465C-93F9-067F6C74123A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baseball_UTest", "Baseball_UTest\Baseball_UTest.csproj", "{A6CBEC77-5107-4D58-9038-158305047192}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database.Baseball.Tests", "Baseball_UTest\Database.Baseball.Tests.csproj", "{A6CBEC77-5107-4D58-9038-158305047192}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{9C2CDCFE-1E40-4B3C-9844-E3D063C4C7AC}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\AdminLTE-2.3.0-Original.zip = ..\..\AdminLTE-2.3.0-Original.zip
 		..\..\Requirements.xlsx = ..\..\Requirements.xlsx
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynasty.Core", "Core\Dynasty.Core.csproj", "{FFD11924-0315-4437-BD08-6223D3FE71F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynasty.Domain", "Dynasty.Domain\Dynasty.Domain.csproj", "{54D6A867-1C58-4C01-A1A0-DC006DEC185C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynasty.Core.Tests", "Dynasty.Core.Tests\Dynasty.Core.Tests.csproj", "{616E7EA0-16AF-404A-9E59-5ED23C02E2D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynasty.Domain.Tests", "Dynasty.Domain.Tests\Dynasty.Domain.Tests.csproj", "{3483D2EE-6B00-42BD-A622-6BFC8CD15E12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynasty.Infrastructure", "Infrastructure\Dynasty.Infrastructure.csproj", "{B2220F9D-59EA-4F0F-837C-28B97FF9BAB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynasty.Baseball.RestApi", "Dynasty.Baseball.RestApi\Dynasty.Baseball.RestApi.csproj", "{7E6627C4-38A8-48EA-92C5-5F141533F120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynasty.Testing.Tool", "Dynasty.Testing.Tool\Dynasty.Testing.Tool.csproj", "{E22C1078-4503-4A5A-A7B8-28C004F33F68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynasty.Database.Control", "Database\Dynasty.Database.Control.csproj", "{535AE8C5-A0D9-4814-A8DC-21919996998D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynasty.Database.Control.Test", "Database_Test\Dynasty.Database.Control.Test.csproj", "{F016DFF6-FCFD-47E0-9049-1C7EEFA9106F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynasty.Database.Security", "Security\Dynasty.Database.Security.csproj", "{4DF4D5F0-BEC2-405B-B803-CCB6C73D9900}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +75,46 @@ Global
 		{A6CBEC77-5107-4D58-9038-158305047192}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6CBEC77-5107-4D58-9038-158305047192}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6CBEC77-5107-4D58-9038-158305047192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD11924-0315-4437-BD08-6223D3FE71F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD11924-0315-4437-BD08-6223D3FE71F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD11924-0315-4437-BD08-6223D3FE71F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD11924-0315-4437-BD08-6223D3FE71F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54D6A867-1C58-4C01-A1A0-DC006DEC185C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54D6A867-1C58-4C01-A1A0-DC006DEC185C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54D6A867-1C58-4C01-A1A0-DC006DEC185C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54D6A867-1C58-4C01-A1A0-DC006DEC185C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616E7EA0-16AF-404A-9E59-5ED23C02E2D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616E7EA0-16AF-404A-9E59-5ED23C02E2D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616E7EA0-16AF-404A-9E59-5ED23C02E2D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616E7EA0-16AF-404A-9E59-5ED23C02E2D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3483D2EE-6B00-42BD-A622-6BFC8CD15E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3483D2EE-6B00-42BD-A622-6BFC8CD15E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3483D2EE-6B00-42BD-A622-6BFC8CD15E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3483D2EE-6B00-42BD-A622-6BFC8CD15E12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2220F9D-59EA-4F0F-837C-28B97FF9BAB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2220F9D-59EA-4F0F-837C-28B97FF9BAB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2220F9D-59EA-4F0F-837C-28B97FF9BAB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2220F9D-59EA-4F0F-837C-28B97FF9BAB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E6627C4-38A8-48EA-92C5-5F141533F120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6627C4-38A8-48EA-92C5-5F141533F120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6627C4-38A8-48EA-92C5-5F141533F120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6627C4-38A8-48EA-92C5-5F141533F120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E22C1078-4503-4A5A-A7B8-28C004F33F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E22C1078-4503-4A5A-A7B8-28C004F33F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E22C1078-4503-4A5A-A7B8-28C004F33F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E22C1078-4503-4A5A-A7B8-28C004F33F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{535AE8C5-A0D9-4814-A8DC-21919996998D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{535AE8C5-A0D9-4814-A8DC-21919996998D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{535AE8C5-A0D9-4814-A8DC-21919996998D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{535AE8C5-A0D9-4814-A8DC-21919996998D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F016DFF6-FCFD-47E0-9049-1C7EEFA9106F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F016DFF6-FCFD-47E0-9049-1C7EEFA9106F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F016DFF6-FCFD-47E0-9049-1C7EEFA9106F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F016DFF6-FCFD-47E0-9049-1C7EEFA9106F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DF4D5F0-BEC2-405B-B803-CCB6C73D9900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF4D5F0-BEC2-405B-B803-CCB6C73D9900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF4D5F0-BEC2-405B-B803-CCB6C73D9900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF4D5F0-BEC2-405B-B803-CCB6C73D9900}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

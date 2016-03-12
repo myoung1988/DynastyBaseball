@@ -1,0 +1,6 @@
+﻿INSERT INTO Persons (PersonID, FirstName, LastName, Address, City) VALUES (10, 'Mike', 'Young', '301 Muehl Dr', 'Lockport')
+INSERT INTO Persons (PersonID, FirstName, LastName, Address, City) VALUES (11, 'Mike', 'Young', '301 Muehl Dr', 'Lockport')
+INSERT INTO Persons (PersonID, FirstName, LastName, Address, City) VALUES (12, 'Mike', 'Young', '301 Muehl Dr', 'Lockport')
+INSERT INTO Persons (PersonID, FirstName, LastName, Address, City) VALUES (13, 'Success', 'Young', '301 Muehl Dr', 'Lockport')
+INSERT INTO Persons (PersonID, FirstName, LastName, Address, City) VALUES (14, 'Mike', 'Young', '301 Muehl Dr', 'Lockport')
+INSERT INTO Persons (PersonID, FirstName, LastName, Address, City) VALUES (15, 'Mike', 'Young', '301 Muehl Dr', 'Lockport')

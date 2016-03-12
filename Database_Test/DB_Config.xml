@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--MSSQL - sqloledb, ORCL - OraOLEDB.Oracle. If Provider is unknown these values will default-->
+<!--Types: MSSQL, Oracle, Access-->
+<Database>
+  <DataSource>localhost</DataSource>
+  <UserID>da</UserID>
+  <Password>rH8/xlmRilVGWSC254dQfg==</Password>
+  <Provider>sqloledb</Provider>
+  <InitialCatalog>ODS_production</InitialCatalog>
+</Database>
+
